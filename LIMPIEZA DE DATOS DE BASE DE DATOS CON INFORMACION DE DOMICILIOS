@@ -57,7 +57,7 @@ ADD PropertySplitCity Nvarchar(100)
 UPDATE [Nashville-Housing-for-Data-Cleaning]
 SET PropertySplitCity = SUBSTRING(PropertyAddress, CHARINDEX(',', PropertyAddress)+1,LEN(PropertyAddress))
 
--- SEPARAR LA INFORMACION DE LA COLUMNA DIRECCION DEL DUEÑO DE FORMA RAPIDA
+-- SEPARAR LA INFORMACION DE LA COLUMNA DIRECCION DEL DUEÃ‘O DE FORMA RAPIDA
 
 SELECT 
 PARSENAME(REPLACE(OwnerAddress,',', '.'),3) AS Address,
