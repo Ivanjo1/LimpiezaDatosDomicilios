@@ -37,7 +37,7 @@ home_team, pitcher_position, AVG(1.00 * pitch_number) OVER (PARTITION BY home_te
 FROM LastPitchRays
 WHERE away_team = 'TB'
 
--- los tres lanzamientos m·s comunes para los turnos al bate del 1 al 10 y la cantidad total
+-- los tres lanzamientos m√°s comunes para los turnos al bate del 1 al 10 y la cantidad total
 
 WITH TotalPitchSequence AS (
   SELECT DISTINCT
